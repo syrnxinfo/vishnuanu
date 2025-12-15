@@ -68,7 +68,7 @@
                 opacity: 0;
             }
             20% {
-                opacity: 0.3;
+                opacity: 0.5;
             }
             100% {
                 transform: translateY(-90px) scale(1.08);
@@ -78,9 +78,9 @@
 
         .floating-heart {
             position: absolute;
-            color: #f97393;
+            color: #c91e47;
             opacity: 0;
-            animation: float-up 9s ease-in-out infinite;
+            animation: float-up 6s ease-in-out infinite;
             filter: blur(0.2px);
         }
 
@@ -101,6 +101,36 @@
             bottom: -28px;
             animation-delay: 5s;
         }
+
+        .floating-heart--4 {
+            left: 25%;
+            bottom: -35px;
+            animation-delay: 1s;
+        }
+
+        .floating-heart--5 {
+            left: 65%;
+            bottom: -30px;
+            animation-delay: 3.5s;
+        }
+
+        .floating-heart--6 {
+            left: 15%;
+            bottom: -25px;
+            animation-delay: 6.5s;
+        }
+
+        .floating-heart--7 {
+            right: 25%;
+            bottom: -38px;
+            animation-delay: 4s;
+        }
+
+        .floating-heart--8 {
+            left: 55%;
+            bottom: -22px;
+            animation-delay: 7s;
+        }
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
@@ -110,18 +140,23 @@
 <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
 <header class="py-6">
 <div class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-4">
-<h1 class="text-xl font-bold text-gray-900 dark:text-white">Vishnu &amp; Anu</h1>
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">Vishnu <span class="text-primary">♥</span> Anu</h1>
 <p class="text-lg text-gray-600 dark:text-gray-300">Jan 26, 2026</p>
 </div>
 </header>
 <main class="flex flex-col gap-10 md:gap-16">
 <div class="@container">
             <div class="@[480px]:p-4">
-            <div class="relative flex min-h-[480px] flex-col gap-6 bg-cover bg-top bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4 overflow-hidden" data-alt="A smiling couple, Vishnu and Anu, posing together in a beautiful outdoor setting." style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("./img/06.webp");'>
+            <div class="relative flex min-h-[480px] flex-col gap-6 bg-cover bg-top bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center md:justify-end p-4 md:pb-12 overflow-hidden" data-alt="A smiling couple, Vishnu and Anu, posing together in a beautiful outdoor setting." style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("./img/06.webp");'>
             <div class="pointer-events-none absolute inset-0 overflow-hidden">
             <span class="floating-heart floating-heart--1 text-4xl">♥</span>
             <span class="floating-heart floating-heart--2 text-5xl">♥</span>
             <span class="floating-heart floating-heart--3 text-4xl">♥</span>
+            <span class="floating-heart floating-heart--4 text-3xl">♥</span>
+            <span class="floating-heart floating-heart--5 text-4xl">♥</span>
+            <span class="floating-heart floating-heart--6 text-5xl">♥</span>
+            <span class="floating-heart floating-heart--7 text-3xl">♥</span>
+            <span class="floating-heart floating-heart--8 text-4xl">♥</span>
             </div>
             <div class="flex flex-col gap-2 text-center fade-up">
 <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">Vishnu &amp; Anu</h1>
@@ -145,12 +180,12 @@
 <p class="text-gray-600 dark:text-gray-300">11 AM to 2:00 PM</p>
 <p class="text-gray-600 dark:text-gray-300">Jubilee Hall</p>
 </div>
-<div class="flex flex-col items-center gap-3 rounded-xl bg-white/5 p-6">
+<a href="https://maps.app.goo.gl/e541LzGWBuG6kYQ29" target="_blank" class="flex flex-col items-center gap-3 rounded-xl bg-white/5 p-6 cursor-pointer hover:bg-white/10 transition-colors">
 <div class="flex size-12 items-center justify-center rounded-full bg-primary/20 text-primary"><span class="material-symbols-outlined text-3xl">location_on</span></div>
 <h3 class="font-bold text-lg text-gray-900 dark:text-white">Venue Address</h3>
 <p class="text-gray-600 dark:text-gray-300">Jubilee Hall</p>
 <p class="text-gray-600 dark:text-gray-300">St. Francis Xavier Church Auditorium</p>
-</div>
+</a>
 </div>
 </section>
 <section>
@@ -163,7 +198,7 @@
 <div class="w-px grow bg-primary/30"></div>
 </div>
 <div class="flex flex-col gap-4 pb-8 md:text-right">
-<p class="text-sm font-medium text-primary">August 15, 2018</p>
+<p class="text-sm font-medium text-primary">2018</p>
 <h3 class="text-lg font-bold text-gray-900 dark:text-white">Where It All Began</h3>
 <p class="text-gray-600 dark:text-gray-300">We met in college, in the same classroom, unaware that fate had already written our story.</p>
 </div>
@@ -190,7 +225,7 @@
 <div class="w-px grow bg-primary/30"></div>
 </div>
 <div class="flex flex-col gap-4 pb-8">
-<p class="text-sm font-medium text-primary">August 22, 2020</p>
+<p class="text-sm font-medium text-primary">2020</p>
 <h3 class="text-lg font-bold text-gray-900 dark:text-white">A Beautiful Yes</h3>
 <p class="text-gray-600 dark:text-gray-300">From friendship to love, she said yes—and our hearts chose each other forever.</p>
 </div>
@@ -247,7 +282,7 @@
 <img class="h-full w-full object-cover" data-alt="Couple sitting on a mountaintop, enjoying the view." src="./img/03.PNG"/>
 </div>
 <div class="aspect-[3/4] overflow-hidden rounded-lg">
-<img class="h-full w-full object-cover" data-alt="Close-up shot of the couple's hands with an engagement ring." src="./img/04.PNG"/>
+<img class="h-full w-full object-cover" data-alt="Close-up shot of the couple's hands with an engagement ring." src="./img/05.JPG"/>
 </div>
 </div>
 </section>
